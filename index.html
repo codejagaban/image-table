@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Optimization Comparison</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    td {
+      text-align: center;
+    }
+</style>
+  </style>
+
+  <body>
+    <h1>
+      Images
+    </h1>
+
+    <table>
+      <tr>
+        <th>No</th>
+        <th>Preview</th>
+        <th>Uploadcare q=normal jpeg</th>
+        <th>Uploadcare q=normal webp</th>
+        <th>Uploadcare q=normal avif</th>
+        <th>Cloudinary q=80 jpeg</th>
+        <th>Cloudinary q=80 webp</th>
+        <th>Cloudinary q=80 avif</th>
+        <th>ImageKit q=80 jpeg</th>
+        <th>ImageKit q=80 webp</th>
+        <th>ImageKit q=80 avif</th>
+        <th>Filestack q=80 jpeg</th>
+        <th>Filestack q=80 webp</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><img src="https://ucarecdn.com/2a607169-d301-4e09-a6f7-187ea9bd6d9b/-/preview/100x100/" alt=""></td>
+        <td>137 KB</td>
+        <td>121 KB</td>
+        <td>107 KB</td>
+        <td>125 KB</td>
+        <td>107 KB</td>
+        <td>83 KB</td>
+        <td>158 KB</td>
+        <td>99 KB</td>
+        <td>76 KB</td>
+        <td>126 KB</td>
+        <td>99 KB</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><img src="https://ucarecdn.com/4cc1fa64-dd3c-4892-bb0f-d32c5019d6ce/-/preview/100x100/" alt=""></td>
+        <td>46 KB</td>
+        <td>29 KB</td>
+        <td>22 KB</td>
+        <td>42 KB</td>
+        <td>26 KB</td>
+        <td>17 KB</td>
+        <td>52 KB</td>
+        <td>24 KB</td>
+        <td>15 KB</td>
+        <td>42 KB</td>
+        <td>24 KB</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><img src="https://ucarecdn.com/887d6c3a-1ec4-461e-a3c6-72b839c98487/-/preview/100x100/" alt=""></td>
+        <td>72 KB</td>
+        <td>52 KB</td>
+        <td>37 KB</td>
+        <td>64 KB</td>
+        <td>39 KB</td>
+        <td>26 KB</td>
+        <td>88 KB</td>
+        <td>35 KB</td>
+        <td>23 KB</td>
+        <td>65 KB</td>
+        <td>35 KB</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><img src="https://ucarecdn.com/470b1d34-5736-4143-b787-b21e70814883/-/preview/100x100/" alt=""></td>
+        <td>108 KB</td>
+        <td>85 KB</td>
+        <td>69 KB</td>
+        <td>99 KB</td>
+        <td>72 KB</td>
+        <td>52 KB</td>
+        <td>124 KB</td>
+        <td>65 KB</td>
+        <td>45 KB</td>
+        <td>99 KB</td>
+        <td>66 KB</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><img src="https://ucarecdn.com/bbd3e07b-cad3-48e8-b0d8-545571df83b1/-/preview/100x100/" alt=""></td>
+        <td>117 KB</td>
+        <td>87 KB</td>
+        <td>77 KB</td>
+        <td>108 KB</td>
+        <td>84 KB</td>
+        <td>58 KB</td>
+        <td>131 KB</td>
+        <td>69 KB</td>
+        <td>51 KB</td>
+        <td>109 KB</td>
+        <td>70 KB</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><img src="https://ucarecdn.com/900ce4e6-4ecc-4700-b49d-e265eaa82543/-/preview/100x100/" alt=""></td>
+        <td>91 KB</td>
+        <td>75 KB</td>
+        <td>63 KB</td>
+        <td>82 KB</td>
+        <td>63 KB</td>
+        <td>47 KB</td>
+        <td>107 KB</td>
+        <td>57 KB</td>
+        <td>40 KB</td>
+        <td>83 KB</td>
+        <td>57 KB</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><img src="https://ucarecdn.com/3b414cad-7e70-41c8-8a60-0173620dc309/-/preview/100x100/" alt=""></td>
+        <td>83 KB</td>
+        <td>64 KB</td>
+        <td>54 KB</td>
+        <td>78 KB</td>
+        <td>57 KB</td>
+        <td>44 KB</td>
+        <td>90 KB</td>
+        <td>53 KB</td>
+        <td>38 KB</td>
+        <td>79 KB</td>
+        <td>53 KB</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><img src="https://ucarecdn.com/5e258b33-806b-4737-94b2-6afbf6c5954b/-/preview/100x100/" alt=""></td>
+        <td>80 KB</td>
+        <td>60 KB</td>
+        <td>54 KB</td>
+        <td>71 KB</td>
+        <td>53 KB</td>
+        <td>35 KB</td>
+        <td>96 KB</td>
+        <td>47 KB</td>
+        <td>33 KB</td>
+        <td>71 KB</td>
+        <td>48 KB</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td><img src="https://ucarecdn.com/c24ccc05-b666-4be6-ba9a-3e8907a60837/-/preview/100x100/" alt=""></td>
+        <td>111 KB</td>
+        <td>84 KB</td>
+        <td>70 KB</td>
+        <td>97 KB</td>
+        <td>71 KB</td>
+        <td>50 KB</td>
+        <td>133 KB</td>
+        <td>65 KB</td>
+        <td>47 KB</td>
+        <td>98 KB</td>
+        <td>65 KB</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td><img src="https://ucarecdn.com/fb44ad0c-886b-4e5a-9657-39098b452a41/-/preview/100x100/" alt=""></td>
+        <td>110 KB</td>
+        <td>96 KB</td>
+        <td>86 KB</td>
+        <td>102 KB</td>
+        <td>82 KB</td>
+        <td>64 KB</td>
+        <td>127 KB</td>
+        <td>74 KB</td>
+        <td>51 KB</td>
+        <td>103 KB</td>
+        <td>74 KB</td>
+      </tr>
+    </table>
+
+    <h2>Image Quality</h2>
+      <table>
+        <tr>
+          <th>No</th>
+          <th>Preview</th>
+          <th>Image size</th>
+          <th>Uploadcare jpeg (dssim)</th>
+
+          <th>Cloudinary jpeg (dssim)</th>
+
+          <th>ImageKit jpeg (dssim)</th>
+
+
+          <th>Filestack jpeg (dssim)</th>
+
+
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><img src="https://ucarecdn.com/2a607169-d301-4e09-a6f7-187ea9bd6d9b/-/preview/100x100/" alt=""></td>
+          <td>137 KB ± </td>
+          <td>0.00121729</td>
+          <td>0.00124200</td>
+          <td>0.00144857</td>
+          <td>0.00124221</td>
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="https://ucarecdn.com/4cc1fa64-dd3c-4892-bb0f-d32c5019d6ce/-/preview/100x100/" alt=""></td>
+          <td>46 KB ±</td>
+          <td>0.00055397</td>
+          <td>0.00055761</td>
+          <td>0.00062464</td>
+          <td>0.00055630</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="https://ucarecdn.com/887d6c3a-1ec4-461e-a3c6-72b839c98487/-/preview/100x100/" alt=""></td>
+          <td>72 ±</td>
+          <td>0.00103612</td>
+          <td>0.00106377</td>
+          <td>0.00117129</td>
+          <td>0.00106092</td>
+
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="https://ucarecdn.com/470b1d34-5736-4143-b787-b21e70814883/-/preview/100x100/" alt=""></td>
+          <td>108 KB ±</td>
+          <td>0.00127974</td>
+          <td>0.00131198</td>
+          <td>0.00232209</td>
+          <td>0.00183938</td>
+
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><img src="https://ucarecdn.com/bbd3e07b-cad3-48e8-b0d8-545571df83b1/-/preview/100x100/" alt=""></td>
+          <td>117 KB ±</td>
+          <td>0.00110447</td>
+          <td>0.00115210</td>
+          <td>0.00115214</td>
+          <td>0.00120600</td>
+
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><img src="https://ucarecdn.com/900ce4e6-4ecc-4700-b49d-e265eaa82543/-/preview/100x100/" alt=""></td>
+          <td>91 ±</td>
+          <td>0.00110561</td>
+          <td>0.00114512</td>
+          <td>0.00129636</td>
+          <td>0.00114149</td>
+
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><img src="https://ucarecdn.com/3b414cad-7e70-41c8-8a60-0173620dc309/-/preview/100x100/" alt=""></td>
+          <td>83 KB ±</td>
+          <td>0.00095340</td>
+          <td>0.00089827</td>
+          <td>0.00107004</td>
+          <td>0.00089740</td>
+
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><img src="https://ucarecdn.com/5e258b33-806b-4737-94b2-6afbf6c5954b/-/preview/100x100/" alt=""></td>
+          <td>80 KB ±</td>
+          <td>0.00161442</td>
+          <td>0.00195599</td>
+          <td>0.00152017</td>
+          <td>0.00196323</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><img src="https://ucarecdn.com/c24ccc05-b666-4be6-ba9a-3e8907a60837/-/preview/100x100/" alt=""></td>
+          <td>111 KB ±</td>
+          <td>0.00098923</td>
+          <td>0.00105019</td>
+          <td>0.00109612</td>
+          <td>0.00104580</td>
+        <tr>
+          <td>10</td>
+          <td><img src="https://ucarecdn.com/fb44ad0c-886b-4e5a-9657-39098b452a41/-/preview/100x100/" alt=""></td>
+          <td>110 KB ±</td>
+          <td>0.00164296</td>
+          <td>0.00170743</td>
+          <td>0.00180676</td>
+          <td>0.00169882</td>
+        </tr>
+      </table>
+  </body>
+
+</html>
